@@ -30,6 +30,6 @@ public class Siswa implements Showing {
     }
     
     public void showDetail() {
-        System.out.println(String.format("Nama Siswa: %s \nID: %d \nMata Pelajaran: %s \nTotal Nilai: %.2f \nStatus: %s", nama, id, mataPelajaran, totalNilai, status));
+        System.out.println(String.format("Nama Siswa: %s \nID: %d \nMata Pelajaran: %s \nTotal Nilai: %.2f \nStatus: %s", nama, id, mataPelajaran.namaMataPelajaran, totalNilai, status));
     }
 }
