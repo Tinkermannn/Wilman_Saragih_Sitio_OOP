@@ -27,6 +27,7 @@ public class Siswa implements Showing {
         } else {
             this.status = "TIDAK LULUS";
         }
+        this.totalNilai = nilaiTotal;
     }
     
     public void showDetail() {
