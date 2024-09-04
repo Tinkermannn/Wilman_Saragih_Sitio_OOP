@@ -17,7 +17,7 @@ public class Main {
         
         IPA.showDetail();
         ana.totalNilai();
-        System.out.println();
+        System.out.println("\n");
         ana.showDetail();
     }
 }
