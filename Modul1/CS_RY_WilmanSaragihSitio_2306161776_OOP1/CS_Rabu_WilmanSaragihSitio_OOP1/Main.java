@@ -12,7 +12,7 @@ public class Main {
         Guru guruIPA = new Guru("Mr. Budi", 20);
         MataPelajaran IPA = new MataPelajaran("IPA", guruIPA);
         
-        IPA.addNilai(Penilaian.UTS, (float) 30, Penilaian.UAS, (float)70);
+        IPA.addNilai(Penilaian.UTS, 30, Penilaian.UAS, 70);
         Siswa ana = new Siswa("Ana", 33, IPA);
         
         IPA.showDetail();

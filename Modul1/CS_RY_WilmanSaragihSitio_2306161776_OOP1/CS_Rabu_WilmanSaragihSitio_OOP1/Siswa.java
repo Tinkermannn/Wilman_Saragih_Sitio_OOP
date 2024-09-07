@@ -20,14 +20,13 @@ public class Siswa implements Showing {
     }
     
     public void totalNilai() {
-        float nilaiTotal = ((40 * mataPelajaran.nilaiUTS)/100) + ((60 * mataPelajaran.nilaiUAS)/100);
+        this.totalNilai = ((40 * mataPelajaran.nilaiUTS)/100) + ((60 * mataPelajaran.nilaiUAS)/100);
         
-        if (nilaiTotal >= 75) {
+        if (totalNilai >= 75) {
             this.status = "LULUS";
         } else {
             this.status = "TIDAK LULUS";
         }
-        this.totalNilai = nilaiTotal;
     }
     
     public void showDetail() {
