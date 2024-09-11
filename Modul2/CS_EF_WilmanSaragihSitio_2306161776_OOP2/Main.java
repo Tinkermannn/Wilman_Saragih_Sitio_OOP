@@ -2,7 +2,7 @@
 /**
  * Write a description of class Main here.
  *
- * @author (your name)
+ * @author (Wilman Saragih Sitio)
  * @version (a version number or a date)
  */
 public class Main
