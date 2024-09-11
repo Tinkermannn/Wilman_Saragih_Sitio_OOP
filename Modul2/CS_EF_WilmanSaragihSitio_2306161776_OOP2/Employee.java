@@ -17,7 +17,8 @@ public class Employee extends Person implements CalculateSalary
     }
     
     public void receiveTask(String task) {
-        System.out.print("Task: " + task + "\n");
+        System.out.print("Task: " + task);
+        System.out.println("\n");
     }
     
     public double totalSalary() {
