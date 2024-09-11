@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Manager
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Manager\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name\ id
+comment1.target=Manager(java.lang.String,\ int)
+comment2.params=employee
+comment2.target=void\ addEmployee(Employee)
+comment3.params=employee\ task
+comment3.target=void\ assignTask(Employee,\ java.lang.String)
+comment4.params=
+comment4.target=void\ displayInfo()
+numComments=5
