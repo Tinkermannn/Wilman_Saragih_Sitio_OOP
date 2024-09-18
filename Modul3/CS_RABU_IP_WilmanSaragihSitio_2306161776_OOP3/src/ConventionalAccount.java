@@ -5,6 +5,7 @@ public class ConventionalAccount extends Account {
     public ConventionalAccount(int accountNumber, double balance, Bank bank, AccountType accountType, double creditInterestRate) {
         super(accountNumber, balance, bank, accountType);
         this.credit = 0;
+        this.creditInterestRate =creditInterestRate;
     }
 
     public void setCredit(double credit) {
@@ -20,7 +21,7 @@ public class ConventionalAccount extends Account {
             setBalance(getBalance() - credit);
             setCredit(0);
         } else {
-            System.out.println("Balance tifdak cukup");
+            System.out.println("Balance tidak cukup");
         }
     }
 
@@ -43,7 +44,7 @@ public class ConventionalAccount extends Account {
 
     public void showDetail() {
         super.showDetail();
-        System.out.println("Credit: " + credit);
+        System.out.println("Credit: " + this.credit);
         System.out.println("Credit Rate: " + creditInterestRate);
     }
 }
