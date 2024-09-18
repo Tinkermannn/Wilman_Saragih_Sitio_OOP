@@ -14,4 +14,9 @@ public class IslamicAccount extends Account{
         double temp = getBalance() * mudhorobahRate/100;
         setBalance(getBalance() + temp);
     }
+
+    public void showDetail() {
+        super.showDetail();
+        System.out.println("Mudhorobah: " + getMudhorobahRate());
+    }
 }
