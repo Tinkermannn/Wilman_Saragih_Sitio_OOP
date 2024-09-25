@@ -29,7 +29,7 @@ public class ConventionalAccount extends Account {
         if (amount > 0) {
             setCredit(getCredit() + (amount * creditInterestRate/100));
         } else {
-            System.out.println("Balance tifdak cukup");
+            System.out.println("Balance tidak cukup");
         }
     }
 
@@ -38,7 +38,7 @@ public class ConventionalAccount extends Account {
             System.out.println("Error");
         } else {
             double tempCredit = (amount * creditInterestRate/100) - (amount * discountRate/100);
-            setCredit(getCredit() + (amount * creditInterestRate/100));
+            setCredit(getCredit() + tempCredit);
         }
     }
 
