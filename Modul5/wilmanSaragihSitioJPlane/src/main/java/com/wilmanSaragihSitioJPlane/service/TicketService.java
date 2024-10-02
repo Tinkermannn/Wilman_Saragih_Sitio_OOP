@@ -33,10 +33,19 @@ public class TicketService {
         return ticketRepository.findAll();
     }
 
-//    public Ticket bookTicket(Long buyerId, Long planeId, String code) {
-//        Plane plane = planeRepository.findById(planeId);
-//        Account buyer = accountRepository.findById(buyerId);
-//
-//
-//    }
+    public Ticket bookTicket(Long buyerId, Long planeId, String code) {
+        Plane plane = planeRepository.findById(planeId)
+                .orElseThrow(()-> new RuntimeException("Plane tidak ditemukan"));
+        Account buyer = accountRepository.findById(buyerId)
+                .orElseThrow(()-> new RuntimeException("Buyer tidak ditemukan"));
+
+        Ticket ticket = new Ticket(buyer, plane, code);
+
+        buyer.setBalance(buyer.getBalance() - 100000);
+
+        ticketRepository.save(ticket);
+        accountRepository.save(buyer);
+
+        return ticket;
+    }
 }

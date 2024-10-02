@@ -30,11 +30,11 @@ public class WilmanSaragihSitioJPlaneApplication{
 			System.out.println("All accounts:");
 			accounts.forEach(account -> System.out.println(account));
 
-//			Account account = accountService.topUpBalance(22, "wilman", "wilman", 200000);
+			Account account = accountService.topUpBalance(22L, "wilman", "wilman", 200000);
 
-//			Ticket ticket = ticketService.bookTicket(1L, 1L, "KL774");
+			Ticket ticket = ticketService.bookTicket(22L, 1L, "KL776");
 			System.out.println("Added ticket:");
-//			System.out.println(ticketService.getTicket(ticket.getId()));
+			System.out.println(ticketService.getTicket(ticket.getId()));
 			System.out.println("All ticket:");
 			List<Ticket> tickets = ticketService.getAllTickets();
 			tickets.forEach(x -> System.out.println(x));
@@ -43,5 +43,4 @@ public class WilmanSaragihSitioJPlaneApplication{
 			updatedAccounts.forEach(x -> System.out.println(x));
 		};
 	}
-
 }

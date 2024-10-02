@@ -17,13 +17,14 @@ public class Ticket {
     @JoinColumn(name = "plane_id", nullable = false)
     private Plane plane;
 
+
     @Column(name = "code", nullable = false)
     private String code;
 
     public Ticket(Account buyer, Plane plane, String code) {
         this.buyer = buyer;
         this.plane = plane;
-        this.code = "";
+        this.code = code;
     }
 
     public Ticket() {
