@@ -26,7 +26,7 @@ public class AccountService {
        Account account = accountRepository.findById(accountId).orElseThrow(()
                -> new RuntimeException("Account tidak ditemukan"));
 
-       if(!account.getUsername().equals(username) && !account.getPassword().equals(password)) {
+       if (!account.getUsername().equals(username) && !account.getPassword().equals(password)) {
            throw new RuntimeException("Invalid username or password");
        } else {
            account.setBalance(account.getBalance() + amount);

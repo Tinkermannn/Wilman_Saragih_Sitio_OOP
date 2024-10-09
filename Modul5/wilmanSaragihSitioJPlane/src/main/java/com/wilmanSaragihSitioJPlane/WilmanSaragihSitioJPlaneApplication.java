@@ -26,21 +26,25 @@ public class WilmanSaragihSitioJPlaneApplication{
 	@Bean
 	public ApplicationRunner initializer (){
 		return args -> {
-			List<Account> accounts = accountService.getAllUsers();
-			System.out.println("All accounts:");
-			accounts.forEach(account -> System.out.println(account));
+//			List<Account> accounts = accountService.getAllUsers();
+//			System.out.println("All accounts:");
+//			accounts.forEach(account -> System.out.println(account));
+//
+//			Account account = accountService.topUpBalance(22L, "wilman", "wilman", 200000);
+//
+//			Ticket ticket = ticketService.bookTicket(22L, 1L, "KL776");
+//
+//			System.out.println("Added ticket:");
+//			System.out.println(ticketService.getTicket(ticket.getId()));
 
-			Account account = accountService.topUpBalance(22L, "wilman", "wilman", 200000);
-
-			Ticket ticket = ticketService.bookTicket(22L, 1L, "KL776");
-			System.out.println("Added ticket:");
-			System.out.println(ticketService.getTicket(ticket.getId()));
 			System.out.println("All ticket:");
 			List<Ticket> tickets = ticketService.getAllTickets();
+
 			tickets.forEach(x -> System.out.println(x));
-			List<Account> updatedAccounts = accountService.getAllUsers();
-			System.out.println("All accounts updated:");
-			updatedAccounts.forEach(x -> System.out.println(x));
+//			List<Account> updatedAccounts = accountService.getAllUsers();
+//
+//			System.out.println("All accounts updated:");
+//			updatedAccounts.forEach(x -> System.out.println(x));
 		};
 	}
 }
